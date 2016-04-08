@@ -11,6 +11,8 @@
 #define kConstant 50.0
 
 @interface LoginViewController() <UITextFieldDelegate>
+
+
 @property (weak, nonatomic) IBOutlet UIImageView *usernameImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *passwordImageView;
 @property (weak, nonatomic) IBOutlet UITextField *usernameTextField;
@@ -52,6 +54,28 @@
     NSLog(@"Sign up...");
 }
 
+#pragma mark -Public API
+-(void)prepareforAnimations{
+    CGRect submitButton=self.submitButton.frame;
+    submitButtonF.origin.x=self.view.frame.size.width;
+    self.submitButton.frame=submitButtonFrame;
+    
+    CGRect footerView=self.footerView.frame;
+    footerView.origin.y=self.view.frame.size.height;
+    self.footeerView.frame=footerViewFrame;}
+
+-(void) animate{
+    [UIView
+     animateWithDuration:0.4 animations:^{
+         
+     self.maskLogoView.alpha=0.0}];
+    // [self.maskLogoView setAlpha:0.0]
+
+[UIView animateWithDuration:0.4 delay:0.2
+                    options:UIViewAnimationOptionCurveEaseInOut
+                 animations:CDRect.SubmitButtonFrame=self.submitbutton.frame
+                 completion:NULL
+ }
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad {
@@ -59,14 +83,14 @@
     
     [self configureTextField:self.usernameTextField];
     [self configureTextField:self.passwordTextField];
+    [self.activityIndicatorView stopAnimating];
+    
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
-    [UIView animateWithDuration:3.0 animations:^{
-        self.logoView.alpha = 0.0;
-    }];
+    [self animate];
 }
 
 #pragma mark - UITextFieldDelegate

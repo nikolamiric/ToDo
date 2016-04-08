@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5641203F1CB7ED5900200911 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5641203E1CB7ED5900200911 /* HomeViewController.m */; };
 		567EDD701CA9668E00AF09BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 567EDD6F1CA9668E00AF09BF /* main.m */; };
 		567EDD731CA9668E00AF09BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 567EDD721CA9668E00AF09BF /* AppDelegate.m */; };
 		567EDD761CA9668E00AF09BF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 567EDD751CA9668E00AF09BF /* ViewController.m */; };
@@ -20,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5641203D1CB7ED5900200911 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		5641203E1CB7ED5900200911 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		567EDD6B1CA9668E00AF09BF /* ToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		567EDD6F1CA9668E00AF09BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		567EDD711CA9668E00AF09BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -107,6 +110,8 @@
 				56E72D6F1CAC061300EF06DD /* LogInViewController.m */,
 				56E72D711CAC092500EF06DD /* SignUpViewController.h */,
 				56E72D721CAC092500EF06DD /* SignUpViewController.m */,
+				5641203D1CB7ED5900200911 /* HomeViewController.h */,
+				5641203E1CB7ED5900200911 /* HomeViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -211,6 +216,7 @@
 				56E72D731CAC092500EF06DD /* SignUpViewController.m in Sources */,
 				56E72D701CAC061300EF06DD /* LogInViewController.m in Sources */,
 				567EDD701CA9668E00AF09BF /* main.m in Sources */,
+				5641203F1CB7ED5900200911 /* HomeViewController.m in Sources */,
 				567EDD7C1CA9668E00AF09BF /* ToDo.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
