@@ -47,7 +47,8 @@
 - (IBAction)forgotPasswordButtonTapped:(UIButton *)sender {
 }
 
-- (IBAction)signInButtonTapped:(UIButton *)sender {
+- (IBAction)signInButtonTapped:(UIButton *)sender {dispatch_after(2.0, <#dispatch_queue_t queue#>, <#^(void)block#>)
+    [self performSegueWithIdentidier:@"HomeSegue" sender:self];
 }
 
 - (IBAction)signUpButtonTapped:(UIButton *)sender {
