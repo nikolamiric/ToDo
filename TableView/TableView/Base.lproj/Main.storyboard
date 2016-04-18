@@ -107,14 +107,29 @@
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="59"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RaK-08-yZh">
+                                                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="m9C-P8-zrl">
                                                     <rect key="frame" x="10" y="10" width="40" height="40"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="40" id="lAK-Yl-geT"/>
-                                                        <constraint firstAttribute="width" constant="40" id="wdb-QL-CXm"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOU-NL-mZW">
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ZWr-Bg-Wwg">
+                                                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                            <subviews>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9Fi-19-IQ0">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                                    <subviews>
+                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RaK-08-yZh">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="40" id="lAK-Yl-geT"/>
+                                                                                <constraint firstAttribute="width" constant="40" id="wdb-QL-CXm"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOU-NL-mZW">
                                                     <rect key="frame" x="58" y="18" width="43" height="24"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="24" id="xtS-BU-aWT"/>
@@ -124,12 +139,6 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="RaK-08-yZh" firstAttribute="centerY" secondItem="SOS-vb-Wf3" secondAttribute="centerY" id="GrV-lo-F8e"/>
-                                                <constraint firstItem="mOU-NL-mZW" firstAttribute="leading" secondItem="RaK-08-yZh" secondAttribute="trailing" constant="8" id="Hr4-9s-E0z"/>
-                                                <constraint firstItem="mOU-NL-mZW" firstAttribute="centerY" secondItem="RaK-08-yZh" secondAttribute="centerY" id="j5Z-T7-M9y"/>
-                                                <constraint firstItem="RaK-08-yZh" firstAttribute="leading" secondItem="SOS-vb-Wf3" secondAttribute="leading" constant="10" id="prt-KU-wXC"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="designerImageView" destination="RaK-08-yZh" id="JDz-Kf-SWI"/>
